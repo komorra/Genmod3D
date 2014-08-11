@@ -4,14 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E3BF7BC9-CA5F-4FB2-A14B-DECD19A376F8}</ProjectGuid>
+    <ProjectGuid>{EC6B9CB6-5A48-47CD-A228-F8ABA2331827}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PluginBridge</RootNamespace>
-    <AssemblyName>PluginBridge</AssemblyName>
+    <RootNamespace>Rock</RootNamespace>
+    <AssemblyName>Rock</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>b1a02ec9</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>e418a87b</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,11 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builder.cs" />
-    <Compile Include="BuilderBase.cs" />
-    <Compile Include="IBuilderProperties.cs" />
-    <Compile Include="Mesh.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RockBuilder.cs" />
+    <Compile Include="RockProperties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginBridge\PluginBridge.csproj">
+      <Project>{e3bf7bc9-ca5f-4fb2-a14b-decd19a376f8}</Project>
+      <Name>PluginBridge</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

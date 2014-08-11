@@ -4,12 +4,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genmod3D", "Genmod3D\Genmod3D.csproj", "{1D3C6F8A-F9F0-4179-B70E-DC3F214E797F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C472A33E-6AAF-4C0C-957E-6962EC378A5F} = {C472A33E-6AAF-4C0C-957E-6962EC378A5F}
+		{EC6B9CB6-5A48-47CD-A228-F8ABA2331827} = {EC6B9CB6-5A48-47CD-A228-F8ABA2331827}
+		{E3BF7BC9-CA5F-4FB2-A14B-DECD19A376F8} = {E3BF7BC9-CA5F-4FB2-A14B-DECD19A376F8}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{A47588F7-EB2E-4769-971C-CC3B52FAA9AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "Trees\Trees.csproj", "{C472A33E-6AAF-4C0C-957E-6962EC378A5F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginBridge", "PluginBridge\PluginBridge.csproj", "{E3BF7BC9-CA5F-4FB2-A14B-DECD19A376F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock", "Rock\Rock.csproj", "{EC6B9CB6-5A48-47CD-A228-F8ABA2331827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,11 +36,16 @@ Global
 		{E3BF7BC9-CA5F-4FB2-A14B-DECD19A376F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3BF7BC9-CA5F-4FB2-A14B-DECD19A376F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3BF7BC9-CA5F-4FB2-A14B-DECD19A376F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6B9CB6-5A48-47CD-A228-F8ABA2331827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6B9CB6-5A48-47CD-A228-F8ABA2331827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6B9CB6-5A48-47CD-A228-F8ABA2331827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6B9CB6-5A48-47CD-A228-F8ABA2331827}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C472A33E-6AAF-4C0C-957E-6962EC378A5F} = {A47588F7-EB2E-4769-971C-CC3B52FAA9AF}
+		{EC6B9CB6-5A48-47CD-A228-F8ABA2331827} = {A47588F7-EB2E-4769-971C-CC3B52FAA9AF}
 	EndGlobalSection
 EndGlobal
